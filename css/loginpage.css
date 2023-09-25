@@ -1,0 +1,64 @@
+body{
+    background-color:rgb(228, 222, 222);
+}
+#maindiv{
+ width: 500px;
+ height:500px;
+ background-color: aliceblue;
+ position: relative;
+ margin-left: 500px;
+ margin-top: 70px;
+ border-radius: 20px;
+ box-shadow: 5px 10px black;
+}
+#head{
+background-image:linear-gradient(rgb(133, 20, 170),rgb(181, 10, 127));
+}
+#name{
+color:aliceblue;
+text-align: center;
+}
+#icon{
+position: relative;
+margin-left: 230px;;
+}
+.box{
+width:70%;
+height:40px;
+position: relative;
+margin-left:70px;
+border:1px solid grey;
+border-radius: 10px;
+padding-left: 15px;
+}
+.child{
+display:inline-block;
+} 
+#forget{
+position: relative;
+margin-left:160px;
+font-size: 20px;
+}
+#remember{
+position: relative;
+margin-left: 20px;
+font-size: 20px;
+}
+#login1{
+width:70%;
+height:40px;
+border-radius:20px;
+position: relative;
+margin-left: 70px;
+background-image:linear-gradient(rgb(133, 20, 170),rgb(181, 10, 127));
+font-size: 20px;
+text-align: center;
+color:antiquewhite;
+}
+span{
+color: rgb(174, 88, 192);
+}
+p{
+text-align: center;
+font-size: 20px;
+}

@@ -1,0 +1,21 @@
+body{
+    background-color:black ;
+}
+   h1{
+    font-size: 70px;
+    text-align: center;
+    color:aliceblue;
+   }
+   .dig{
+    font-size:150px;
+   }
+   span{
+    font-size:150px;
+    color:aliceblue;
+   }
+   #container{
+    border:5px solid aliceblue;
+    padding-left: 350px;
+    position: relative;
+    margin-top: 150px;
+   }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/image_slider.css"/>
+    </head>
+    <body>
+        <h1>MANUAL IMAGESLIDER</h1>
+        <div id="slide">
+            <img class="pics" id="first" src="../images/mountain1.png" alt="pics"/>
+            <img class="pics" src="../images/mountain2.png" alt="pics"/>
+            <img class="pics" src="../images/mouuntain3.png" alt="pics"/>
+            <img class="pics" src="../images/mountain4.png" alt="pics"/>
+            <button class="button" id="butsub" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button" id="butplus" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+         var slideIndex = 1;
+        showDivs(slideIndex);
+
+      function plusDivs(n)
+       {
+    
+        showDivs(slideIndex += n);
+
+          }
+
+     function showDivs(n) {
+     var i;
+     var x = document.getElementsByClassName("pics");
+     if (n > x.length)
+    {
+         slideIndex = 1
+    }
+     if (n < 1)
+    {
+          slideIndex = x.length
+    }
+      for (i = 0; i < x.length; i++)
+    {
+       x[i].style.display = "none";  
+     }
+      x[slideIndex-1].style.display = "block";  
+}
+       </script>
+    </body>
+</html>

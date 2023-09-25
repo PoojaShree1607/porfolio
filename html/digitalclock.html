@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/digitalclock.css"/>
+    </head>
+    <body>
+        <h1>DIGITAL CLOCK</h1>
+        <div id="container">
+            <span id="hour" class="dig"></span>
+            <span><b>:</b></span>
+            <span  id="minute" class="dig"></span>
+            <span><b>:</b></span>
+            <span id="second" class="dig"></span>
+            <span id="amorpm" class="dig"></span>
+        </div>
+        <script>
+            var d=new Date();
+            var hours=d.getHours();
+            var min=d.getMinutes();
+            var sec=d.getSeconds();
+            am_pm="AM"
+            if(hours>12)
+            {
+                hours=hours-12;
+                am_pm="PM";
+            }
+            if(hour==0)
+            {
+                hours=12;
+                am_pm="AM";
+            }
+            console.log(hours);
+            console.log(min);
+            console.log(sec);
+            document.getElementById("hour").innerHTML=hours;
+            document.getElementById('minute').innerHTML=min;
+            document.getElementById('second').innerHTML=sec;
+            document.getElementById("amorpm").innerHTML=am_pm;
+        </script>
+    </body>
+</html>
